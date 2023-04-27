@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 Wrapper.Logo = styled.img`
   width: 89px;
   height: 92px;
+  cursor: pointer;
 `;
 Wrapper.Item = styled.div`
   display: flex;
@@ -32,6 +33,17 @@ Wrapper.Btn = styled.button`
   border: 1px solid #000000;
   border-radius: 8px;
   color: white;
+  cursor: pointer;
+  :active {
+    scale: 0.8;
+  }
 `;
-const Link = styled(NavLink)``;
+const Link = styled(NavLink)`
+  text-decoration: none;
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+`;
 export { Container, Wrapper, Link };

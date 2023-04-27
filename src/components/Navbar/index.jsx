@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Wrapper, Link } from "./style";
 import { navbar } from "../../utils/utils";
 import Logo from "../../assets/imgs/Logo.png";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 export const Navbar = () => {
+  const Navigate = useNavigate();
   return (
     <Container>
       <Wrapper>
-        <Wrapper.Logo src={Logo} />
+        <Wrapper.Logo src={Logo} onClick={() => Navigate("/home")} />
         <Wrapper.Item>
           {navbar.map((val, index) => {
             return (
