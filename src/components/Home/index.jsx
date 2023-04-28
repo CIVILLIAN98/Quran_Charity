@@ -50,11 +50,12 @@ export const Home = () => {
               <AboutProject.SubText>Taqdirlanganlar</AboutProject.SubText>
             </AboutProject>
           </Section>
-          <AboutProject.Video src={vidos} alt={"Video"} controls autoplay>
-            {/* <source src="movie.mp4" type="video/mp4" />
-            <source src="movie.ogg" type="video/ogg" />
-            Your browser does not support the video tag. */}
-          </AboutProject.Video>
+          <AboutProject.Video
+            src={vidos}
+            alt={"Video"}
+            controls
+            autoplay
+          ></AboutProject.Video>
         </Section>
       </Wrapper>
     </Container>
