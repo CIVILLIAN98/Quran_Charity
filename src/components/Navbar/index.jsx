@@ -3,6 +3,7 @@ import { Container, Wrapper, Link } from "./style";
 import { navbar } from "../../utils/utils";
 import Logo from "../../assets/imgs/Logo.png";
 import { Outlet, useNavigate } from "react-router-dom";
+import { Footer } from "../Footer";
 export const Navbar = () => {
   const Navigate = useNavigate();
   return (
@@ -27,6 +28,7 @@ export const Navbar = () => {
         </Wrapper.Item>
       </Wrapper>
       <Outlet />
+      <Footer />
     </Container>
   );
 };
