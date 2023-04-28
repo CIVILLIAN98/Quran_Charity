@@ -71,6 +71,5 @@ AboutProject.SubText = styled.p`
 AboutProject.Video = styled.video`
   width: 100%;
   height: 384px;
-  background-color: red;
 `;
 export { Container, Wrapper, Section, AboutProject };
