@@ -39,11 +39,11 @@ Wrapper.Btn = styled.button`
   }
 `;
 const Link = styled(NavLink)`
-  text-decoration: none;
-  font-family: Poppins;
+  text-decoration: none !important;
   font-size: 32px;
   font-weight: 500;
   line-height: 32px;
   letter-spacing: 0em;
+  color: #38404c;
 `;
 export { Container, Wrapper, Link };
