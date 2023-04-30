@@ -112,7 +112,7 @@ Steps.Number = styled.div`
 `;
 
 const Slide = styled.div`
-  width: 70%;
+  width: 90%;
   padding: 0 131px;
   margin: 0 auto;
   margin-bottom: 100px;
