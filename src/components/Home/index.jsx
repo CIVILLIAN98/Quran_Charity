@@ -14,6 +14,7 @@ import n01 from "../../assets/imgs/01-Number.png";
 import n02 from "../../assets/imgs/02-Number.png";
 import vidos from "../../assets/videos/ndila_-_Run_Run.mp4";
 import SimpleSlider from "../Carousel";
+import { Gallery } from "../Gallery";
 
 export const Home = () => {
   return (
@@ -146,6 +147,7 @@ export const Home = () => {
       </Wrapper>
       <Slide>
         <SimpleSlider />
+        <Gallery />
       </Slide>
     </Container>
   );
