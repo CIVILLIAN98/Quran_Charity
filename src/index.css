@@ -17,6 +17,33 @@
 }
 
 .carouselItem {
-  /* background-color: purple; */
   gap: 10px;
+}
+.cJsbsm {
+  display: grid;
+  grid-template-columns: 243px 243px 243px 243px;
+  grid-template-areas:
+    "a b b c"
+    "d d e f";
+  align-items: center;
+  grid-gap: 20px;
+  justify-content: center;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
 }
