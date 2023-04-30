@@ -16,6 +16,8 @@ import vidos from "../../assets/videos/ndila_-_Run_Run.mp4";
 import SimpleSlider from "../Carousel";
 import { Gallery } from "../Gallery";
 
+import CommentsCarousel from "../Comments";
+
 export const Home = () => {
   return (
     <Container>
@@ -139,15 +141,30 @@ export const Home = () => {
         {/* Jarayon Section */}
         <Section column gap={40}>
           <Section.Header>Jarayon</Section.Header>
-          <Section.Subheader>
+          <Section.Subheader width={"953px"}>
             Tasvirga olingan ishtirokchilarning taassurotlarini video lavha va
             rasm ko’rinishida doimiy ravishda insonlar bilan ulashamiz.
           </Section.Subheader>
         </Section>
       </Wrapper>
+
       <Slide>
         <SimpleSlider />
+        {/* Gallery */}
         <Gallery />
+      </Slide>
+      {/* Fikr va mulohazalar --- Section */}
+      <Section column gap={40}>
+        <Section.Header>Fikr va mulohazalar</Section.Header>
+        <Section.Subheader width={"953px"}>
+          Bizning asosiy maqsadimiz - insonlar hayotida, xususan yosh avlod
+          orasida Qur’onga, ilm olishga va ilm berishga bo’lgan muhabbatlarini
+          oshirish. Ular ham o’z navbatida o’zlarining fikr va takliflarini
+          berishdan doim mamnun.
+        </Section.Subheader>
+      </Section>
+      <Slide>
+        <CommentsCarousel />
       </Slide>
     </Container>
   );
