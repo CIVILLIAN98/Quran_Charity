@@ -7,16 +7,17 @@ import {
   Steps,
   Slide,
 } from "./style";
+import SimpleSlider from "../Carousel";
+import { Gallery } from "../Gallery";
+import CommentsCarousel from "../Comments";
 import Button from "../generics/Button";
+import Input from "../generics/input/index";
 import mainImg from "../../assets/imgs/MainIMG.png";
 import ishtrokEtish from "../../assets/imgs/Ishtrok Etish Tartibi.png";
 import n01 from "../../assets/imgs/01-Number.png";
 import n02 from "../../assets/imgs/02-Number.png";
 import vidos from "../../assets/videos/ndila_-_Run_Run.mp4";
-import SimpleSlider from "../Carousel";
-import { Gallery } from "../Gallery";
-
-import CommentsCarousel from "../Comments";
+import chumo from "../../assets/imgs/Questions-bro .png";
 
 export const Home = () => {
   return (
@@ -166,6 +167,43 @@ export const Home = () => {
       <Slide>
         <CommentsCarousel />
       </Slide>
+      <Section column gap={40} padding={"0 131px"}>
+        <Section.Header>Bog’lanish</Section.Header>
+        <Section.Subheader width={`900px`}>
+          Sizni qiziqtirgan savollarga FAQ bo’limidan javob olishingiz mumkin.
+          Agar sizga yordam bera olmasa malumotlaringizni qoldiring. Biz siz
+          bilan bog’lanamiz
+        </Section.Subheader>
+        <Section>
+          <Section.Img src={chumo} alt="question" />
+          <Section.Form action="">
+            <Section.FormHeader>Yordam kerakmi?</Section.FormHeader>
+            <Section.Subheader text={"left"}>
+              O‘zingiz haqingizda malumot va telefon raqamingizni qoldiring.
+              Bizning menejerlarimiz siz bilan bog‘lanishadi.
+            </Section.Subheader>
+            <div>
+              <Section.StepsSubheader>
+                Ismingizni kiriting
+              </Section.StepsSubheader>
+              <Input />
+            </div>
+            <div>
+              <Section.StepsSubheader>
+                Telefon raqamingizni kiriting
+              </Section.StepsSubheader>
+              <Input />
+            </div>
+            <Section.FormPolicy href="">
+              “Yuborish” tugmasini bosish orqali Platformadan foydalanish
+              qoidalari ga rozilik bildirasiz.
+            </Section.FormPolicy>
+            <Button fs={`24px`} width={`100%`} type={"dark"}>
+              So’rov yuborish
+            </Button>
+          </Section.Form>
+        </Section>
+      </Section>
     </Container>
   );
 };
