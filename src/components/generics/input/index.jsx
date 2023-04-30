@@ -18,6 +18,8 @@ const Input = forwardRef(
       borderBottom,
       margin,
       wr,
+      required,
+      pattern,
     },
     ref
   ) => {
@@ -38,6 +40,8 @@ const Input = forwardRef(
           padding={padding}
           borderBottom={borderBottom}
           margin={margin}
+          required={required}
+          pattern={pattern}
         />
       </Wrapper>
     );

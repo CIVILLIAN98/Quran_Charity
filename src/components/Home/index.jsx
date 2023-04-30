@@ -31,7 +31,12 @@ export const Home = () => {
             </Section.Header>
             <Section.Subheader>Alaq surasi, 1-oyat.</Section.Subheader>
             <Button mt={"30px"} fs={20} width={"178px"} type={"dark"}>
-              Batafsil
+              <Section.FormPolicy
+                target="_blank"
+                href="https://sammuslim.uz/oz/articles/ilm-chirogi-ochmagay?print=on"
+              >
+                Batafsil
+              </Section.FormPolicy>
             </Button>
           </Section.Description>
 
@@ -167,8 +172,8 @@ export const Home = () => {
       <Slide>
         <CommentsCarousel />
       </Slide>
-      <Section column gap={40} padding={"0 131px"}>
-        <Section.Header>Bog’lanish</Section.Header>
+      <Section column gap={40}>
+        <Section.Header id="Contact">Bog’lanish</Section.Header>
         <Section.Subheader width={`900px`}>
           Sizni qiziqtirgan savollarga FAQ bo’limidan javob olishingiz mumkin.
           Agar sizga yordam bera olmasa malumotlaringizni qoldiring. Biz siz
@@ -186,13 +191,13 @@ export const Home = () => {
               <Section.StepsSubheader>
                 Ismingizni kiriting
               </Section.StepsSubheader>
-              <Input />
+              <Input fs={`20px`} required={true} />
             </div>
             <div>
               <Section.StepsSubheader>
                 Telefon raqamingizni kiriting
               </Section.StepsSubheader>
-              <Input />
+              <Input fs={`20px`} type={"number"} required={true} />
             </div>
             <Section.FormPolicy href="">
               “Yuborish” tugmasini bosish orqali Platformadan foydalanish
