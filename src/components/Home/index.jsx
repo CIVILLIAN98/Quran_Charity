@@ -1,8 +1,12 @@
 import React from "react";
-import { AboutProject, Container, Section, Wrapper } from "./style";
+import { AboutProject, Container, Section, Wrapper, Steps } from "./style";
 import Button from "../generics/Button";
 import mainImg from "../../assets/imgs/MainIMG.png";
+import ishtrokEtish from "../../assets/imgs/Ishtrok Etish Tartibi.png";
+import n01 from "../../assets/imgs/01-Number.png";
+import n02 from "../../assets/imgs/02-Number.png";
 import vidos from "../../assets/videos/ndila_-_Run_Run.mp4";
+
 export const Home = () => {
   return (
     <Container>
@@ -56,6 +60,72 @@ export const Home = () => {
             controls
             autoplay
           ></AboutProject.Video>
+        </Section>
+
+        {/* Ishtrok Etish Tartibi Section */}
+
+        <Section column gap={40}>
+          <Section.Header>Ishtirok etish tartibi</Section.Header>
+          <Section.Subheader>
+            Loyihada qatnashish juda oson. Xech qanday qiyinchiliklarsiz biz
+            bilan aloqaga chiqish orqali siz yoki sizning kichik yoshdagi
+            yaqinlaringiz qatnashishi mumkin.
+          </Section.Subheader>
+
+          <Section margin={0} width={`100%`}>
+            <img src={ishtrokEtish} alt="IMG" />
+
+            <Section
+              column
+              height={500}
+              margin={`0px`}
+              ai={"flex-end"}
+              width={`fit-contnet`}
+            >
+              <Steps gap={25}>
+                <img src={n01} alt="01" />
+                <Steps column ai={"flex-start"}>
+                  <Section.StepsHeader>
+                    Biz bilan bog’lanish
+                  </Section.StepsHeader>
+                  <Section.StepsSubheader>
+                    Telegram orqali bizga qatnashuvchini Qur’on tilovatini audio
+                    yoki video ko’rinishida jonatasiz
+                  </Section.StepsSubheader>
+                </Steps>
+              </Steps>
+              <Steps gap={25}>
+                <img src={n02} alt="01" />
+                <Steps column ai={"flex-start"}>
+                  <Section.StepsHeader>Tekshirish</Section.StepsHeader>
+                  <Section.StepsSubheader>
+                    Qatnashuvchilarni yuborgan tilovatini bizning hodimlarimiz
+                    saralab chiqishadi
+                  </Section.StepsSubheader>
+                </Steps>
+              </Steps>
+              <Steps gap={25}>
+                <Steps.Number>03</Steps.Number>
+                <Steps column ai={"flex-start"}>
+                  <Section.StepsHeader>Musobaqalashish</Section.StepsHeader>
+                  <Section.StepsSubheader>
+                    Tekshirish bosqichidan o’tgan ishtirokchilar musobaqada
+                    qatnashishi mumkin
+                  </Section.StepsSubheader>
+                </Steps>
+              </Steps>
+              <Steps gap={25}>
+                <Steps.Number>04</Steps.Number>
+                <Steps column ai={"flex-start"}>
+                  <Section.StepsHeader>Mukofotlash</Section.StepsHeader>
+                  <Section.StepsSubheader>
+                    Musobaqada sovrindor qatnashuvchilarga biz taqdirlash
+                    marosimida sovg’alarimizni topshiramiz
+                  </Section.StepsSubheader>
+                </Steps>
+              </Steps>
+            </Section>
+          </Section>
         </Section>
       </Wrapper>
     </Container>

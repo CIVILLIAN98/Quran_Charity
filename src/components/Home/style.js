@@ -11,14 +11,17 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
 `;
 const Section = styled.main`
   width: ${({ width }) => (width ? `${width}` : "100%")};
   display: flex;
   flex-direction: ${({ column }) => (column ? "column" : "row")};
-  align-items: center;
+  align-items: ${({ ai }) => (ai ? `${ai}` : "center")};
   justify-content: space-between;
-  margin: 100px auto;
+  margin: ${({ margin }) => (margin ? `${margin}` : "100px auto")};
+  gap: ${({ gap }) => `${gap}px`};
+  height: ${({ height }) => `${height}px`};
 `;
 
 Section.Description = styled.div`
@@ -72,4 +75,39 @@ AboutProject.Video = styled.video`
   width: 100%;
   height: 384px;
 `;
-export { Container, Wrapper, Section, AboutProject };
+Section.StepsHeader = styled.p`
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+`;
+Section.StepsSubheader = styled.p`
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  width: 500px;
+`;
+
+const Steps = styled.div`
+  width: ${({ width }) => (width ? `${width}` : "100%")};
+  display: flex;
+  flex-direction: ${({ column }) => (column ? "column" : "row")};
+  align-items: ${({ ai }) => (ai ? `${ai}` : "center")};
+  justify-content: space-between;
+  gap: ${({ gap }) => `${gap}px`};
+  height: ${({ height }) => `${height}px`};
+`;
+
+Steps.Number = styled.div`
+  width: 66px;
+  height: 66px;
+  background: #04402c;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 24px;
+  color: #ffffff;
+`;
+export { Container, Wrapper, Section, AboutProject, Steps };
