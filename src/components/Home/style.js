@@ -22,6 +22,7 @@ const Section = styled.main`
   margin: ${({ margin }) => (margin ? `${margin}` : "100px auto")};
   gap: ${({ gap }) => `${gap}px`};
   height: ${({ height }) => `${height}px`};
+  padding: ${({ padding }) => `${padding}`};
 `;
 
 Section.Description = styled.div`
@@ -44,7 +45,7 @@ Section.Subheader = styled.p`
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
-  text-align: center;
+  text-align: ${({ text }) => (text ? `${text}` : "center")};
   width: ${({ width }) => `${width}`};
 `;
 Section.Img = styled.img`
@@ -116,5 +117,34 @@ const Slide = styled.div`
   margin: 0 auto;
   margin-bottom: 100px;
   text-align: center;
+  padding: 0 101px;
+`;
+Section.Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 622px;
+  height: 739px;
+  background: #fcfcfc;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 69px 42px;
+  gap: 24px;
+`;
+Section.FormHeader = styled.h3`
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #04402c;
+`;
+Section.FormPolicy = styled.a`
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #38404c;
 `;
 export { Container, Wrapper, Section, AboutProject, Steps, Slide };
