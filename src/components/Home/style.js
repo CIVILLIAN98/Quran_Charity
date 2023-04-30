@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 50px auto;
 `;
 const Section = styled.main`
   width: ${({ width }) => (width ? `${width}` : "100%")};
@@ -110,4 +110,11 @@ Steps.Number = styled.div`
   line-height: 24px;
   color: #ffffff;
 `;
-export { Container, Wrapper, Section, AboutProject, Steps };
+
+const Slide = styled.div`
+  width: 70%;
+  padding: 0 131px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+`;
+export { Container, Wrapper, Section, AboutProject, Steps, Slide };

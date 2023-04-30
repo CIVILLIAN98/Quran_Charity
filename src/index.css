@@ -6,3 +6,17 @@
   font-style: normal;
   box-sizing: border-box;
 }
+.slick-next,
+.slick-prev {
+  background-color: black;
+  border-radius: 50px;
+}
+.slick-next,
+.slick-prev:hover {
+  background-color: black !important;
+}
+
+.carouselItem {
+  /* background-color: purple; */
+  gap: 10px;
+}

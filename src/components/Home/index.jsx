@@ -1,11 +1,19 @@
 import React from "react";
-import { AboutProject, Container, Section, Wrapper, Steps } from "./style";
+import {
+  AboutProject,
+  Container,
+  Section,
+  Wrapper,
+  Steps,
+  Slide,
+} from "./style";
 import Button from "../generics/Button";
 import mainImg from "../../assets/imgs/MainIMG.png";
 import ishtrokEtish from "../../assets/imgs/Ishtrok Etish Tartibi.png";
 import n01 from "../../assets/imgs/01-Number.png";
 import n02 from "../../assets/imgs/02-Number.png";
 import vidos from "../../assets/videos/ndila_-_Run_Run.mp4";
+import SimpleSlider from "../Carousel";
 
 export const Home = () => {
   return (
@@ -127,7 +135,18 @@ export const Home = () => {
             </Section>
           </Section>
         </Section>
+        {/* Jarayon Section */}
+        <Section column gap={40}>
+          <Section.Header>Jarayon</Section.Header>
+          <Section.Subheader>
+            Tasvirga olingan ishtirokchilarning taassurotlarini video lavha va
+            rasm ko’rinishida doimiy ravishda insonlar bilan ulashamiz.
+          </Section.Subheader>
+        </Section>
       </Wrapper>
+      <Slide>
+        <SimpleSlider />
+      </Slide>
     </Container>
   );
 };
