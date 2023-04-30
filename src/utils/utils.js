@@ -1,5 +1,6 @@
 // import { useID } from "../Hooks/useID";
 
+import { FAQPage } from "../pages/FAQpage";
 import { HomePage } from "../pages/HomePage";
 import { RegisterPage } from "../pages/RegisterPage";
 
@@ -19,5 +20,13 @@ export const navbar = [
     title: "Ro’yhatdan o’tish",
     element: <RegisterPage />,
     path: "/register",
+  },
+  {
+    id: 3,
+    isPrivate: false,
+    hidden: false,
+    title: "FAQ",
+    element: <FAQPage />,
+    path: "/faq",
   },
 ];

@@ -14,6 +14,7 @@ const Wrapper = styled.div`
   margin: 50px auto;
 `;
 const Section = styled.main`
+  max-width: 1440px;
   width: ${({ width }) => (width ? `${width}` : "100%")};
   display: flex;
   flex-direction: ${({ column }) => (column ? "column" : "row")};
@@ -23,6 +24,7 @@ const Section = styled.main`
   gap: ${({ gap }) => `${gap}px`};
   height: ${({ height }) => `${height}px`};
   padding: ${({ padding }) => `${padding}`};
+  text-align: ${({ text }) => `${text}`};
 `;
 
 Section.Description = styled.div`
@@ -113,6 +115,7 @@ Steps.Number = styled.div`
 `;
 
 const Slide = styled.div`
+  max-width: 1440px;
   width: 90%;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -125,7 +128,7 @@ Section.Form = styled.form`
   align-items: flex-start;
   justify-content: center;
   width: 622px;
-  height: 739px;
+
   background: #fcfcfc;
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 16px;

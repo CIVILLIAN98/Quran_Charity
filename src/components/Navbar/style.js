@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+
 const Container = styled.div`
   width: 100%;
   display: flex;
@@ -46,4 +47,5 @@ const Link = styled(NavLink)`
   letter-spacing: 0em;
   color: #38404c;
 `;
+
 export { Container, Wrapper, Link };
