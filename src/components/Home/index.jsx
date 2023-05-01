@@ -179,31 +179,28 @@ export const Home = () => {
           Agar sizga yordam bera olmasa malumotlaringizni qoldiring. Biz siz
           bilan bog’lanamiz
         </Section.Subheader>
-        <Section>
+        <Section width={"80%"}>
           <Section.Img src={chumo} alt="question" />
-          <Section.Form action="">
+          <Section.Form action={`mailto:"Mustafo2710@gmail.com" `}>
             <Section.FormHeader>Yordam kerakmi?</Section.FormHeader>
             <Section.Subheader text={"left"}>
               O‘zingiz haqingizda malumot va telefon raqamingizni qoldiring.
               Bizning menejerlarimiz siz bilan bog‘lanishadi.
             </Section.Subheader>
-            <div>
-              <Section.StepsSubheader>
-                Ismingizni kiriting
-              </Section.StepsSubheader>
-              <Input fs={`20px`} required={true} />
-            </div>
-            <div>
-              <Section.StepsSubheader>
-                Telefon raqamingizni kiriting
-              </Section.StepsSubheader>
-              <Input fs={`20px`} type={"number"} required={true} />
-            </div>
+
+            <Section.StepsSubheader>Ismingizni kiriting</Section.StepsSubheader>
+            <Input required={true} wr={"100%"} />
+
+            <Section.StepsSubheader>
+              Telefon raqamingizni kiriting
+            </Section.StepsSubheader>
+            <Input type={"tel"} required={true} wr={"100%"} />
+
             <Section.FormPolicy href="">
               “Yuborish” tugmasini bosish orqali Platformadan foydalanish
               qoidalari ga rozilik bildirasiz.
             </Section.FormPolicy>
-            <Button fs={`24px`} width={`100%`} type={"dark"}>
+            <Button fs={`24px`} width={`80%`} type={"dark"} margin={"0 auto"}>
               So’rov yuborish
             </Button>
           </Section.Form>

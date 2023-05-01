@@ -47,3 +47,25 @@
 .f {
   grid-area: f;
 }
+.ant-space
+  css-dev-only-do-not-override-yp8pcc
+  ant-space-horizontal
+  ant-space-align-center {
+  background-color: red !important;
+}
+Space + ant-space-item {
+  background-color: red;
+}
+.Design {
+  color: red;
+  font-size: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.FAQ {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 26px;
+  color: #037650;
+}

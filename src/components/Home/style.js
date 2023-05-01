@@ -123,16 +123,15 @@ const Slide = styled.div`
   padding: 0 101px;
 `;
 Section.Form = styled.form`
+  width: 500px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  width: 622px;
-
   background: #fcfcfc;
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 16px;
-  padding: 69px 42px;
+  padding: 30px 10px;
   gap: 24px;
 `;
 Section.FormHeader = styled.h3`

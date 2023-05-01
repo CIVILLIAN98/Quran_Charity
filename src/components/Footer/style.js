@@ -40,7 +40,7 @@ Wrapper.Text = styled.p`
   text-align: left;
   color: #ffffff;
 `;
-Wrapper.Mail = styled.a`
+Wrapper.Link = styled.a`
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;

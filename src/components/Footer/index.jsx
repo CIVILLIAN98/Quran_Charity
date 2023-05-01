@@ -30,17 +30,22 @@ export const Footer = () => {
           <Wrapper.Header>Ma’lumotlar</Wrapper.Header>
           <Wrapper.Text>Yangiliklar</Wrapper.Text>
           <Wrapper.Text>Loyiha haqida</Wrapper.Text>
-          <Wrapper.Text>FAQ</Wrapper.Text>
+          <Wrapper.Text
+            style={{ cursor: "pointer" }}
+            onClick={() => Navigate("/faq")}
+          >
+            FAQ
+          </Wrapper.Text>
         </Wrapper.Item>
         <Wrapper.Item>
           <Wrapper.Header>Bog’lanish</Wrapper.Header>
-          <Wrapper.Mail href="tel:+821082785727">
+          <Wrapper.Link href="tel:+821082785727">
             +998(00) 123 45 67
-          </Wrapper.Mail>
+          </Wrapper.Link>
 
-          <Wrapper.Mail href="mailto:o’qibolajon@gmail.com">
+          <Wrapper.Link href="mailto:o’qibolajon@gmail.com">
             o’qibolajon@gmail.com
-          </Wrapper.Mail>
+          </Wrapper.Link>
 
           <Wrapper.Icons>
             <a target="blank" href="https://www.instagram.com/mike_21s/">
