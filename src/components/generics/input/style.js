@@ -13,7 +13,7 @@ const Container = styled.input`
   border-bottom: ${({ borderBottom }) =>
     borderBottom ? `${borderBottom}` : "1px solid #E6E9EC"};
   padding: ${({ padding }) => (padding ? `${padding}` : "0 10px")};
-  font-size: ${({ fs }) => (fs ? `${fs}` : "14px")};
+  font-size: ${({ fs }) => (fs ? `${fs}` : "1rem")};
   height: ${({ height }) => (height ? `${height}` : "44px")};
   margin: ${({ margin }) => (margin ? `${margin}` : "0")};
 `;
